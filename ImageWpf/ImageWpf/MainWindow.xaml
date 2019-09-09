@@ -1,0 +1,101 @@
+﻿<Window x:Name="Interface" x:Class="ImageWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageWpf"
+        mc:Ignorable="d"
+        Title="Interface" Height="800" Width="800">
+    <Grid Name="salit" Margin="3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Name="ImageOriginale" Grid.Column="0" Grid.Row="0" Source="C:\Users\Axel\Documents\Visual Studio 2015\Projects\ImageWpf\ImageWpf\bin\debug\lena.bmp" Margin="0,0,0.2,384.4" Grid.RowSpan="2"></Image>
+        <Image Name="ImageChangee" Grid.Column="0" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="buttonImporter"  Content="Importer" Click="ButtonImport_Click" Background="White" Margin="3"></Button>
+            <Button Name="buttonSauvegarder" Grid.Column="1" Content="Sauvegarder" Click="buttonSauvegarder_Click" Background="White" Margin="3"></Button>
+            <Button Name="buttonp90" Grid.Row="1" Grid.Column="0" Content="+90°" Click="buttonp90_Click" Background="White" Margin="3"></Button>
+            <Button Name="buttonm90" Grid.Row="1" Grid.Column="1" Content="-90°" Click="buttonm90_Click" Background="White" Margin="3"></Button>
+            <StackPanel Grid.Row="2" Grid.Column="0">
+                <TextBlock Text="Nuance de gris :"></TextBlock>
+                <Slider Name="sliderNuanceDeGris" SmallChange="1" Maximum="255" Minimum="2"  ></Slider>
+                <Button Name="buttonGris"  Content="Appliquer " Click="buttonGris_Click" Background="White" Margin="3" VerticalAlignment="Center"></Button>
+            </StackPanel>
+            <Button Name="buttonSuperposition" Grid.Row="2" Grid.Column="1" Content="Superposer" Click="buttonSuperposition_Click" Background="White" Margin="3"></Button>
+            <Button Name="buttonContours" Grid.Row="3" Grid.Column="0" Content="Contours" Click="buttonContours_Click" Background="White" Margin="3"></Button>
+            <Button Name="buttonFlou" Grid.Row="3" Grid.Column="1" Content="Flou" Click="buttonFlou_Click" Background="White" Margin="3"></Button>
+
+
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Name="buttonRepoussage" Grid.Row="0" Grid.Column="0" Content="Repoussage" Click="buttonRepoussage_Click" Background="White" Margin="3"></Button>
+            <Button Name="buttonBords" Grid.Row="0" Grid.Column="1" Content="Bords" Click="buttonBords_Click" Background="White" Margin="3"></Button>
+            
+            <!--Création-->
+            <TextBlock Grid.Row="1" Text="Creer histogramme depuis image : " TextWrapping="WrapWithOverflow" VerticalAlignment="Center"></TextBlock>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <ListBox FontSize="10" >
+                    <ListBoxItem Name="R" Content="R" HorizontalContentAlignment="Center" IsSelected="True"></ListBoxItem>
+                    <ListBoxItem Name="G" Content="G" HorizontalContentAlignment="Center"></ListBoxItem>
+                    <ListBoxItem Name="B" Content="B" HorizontalContentAlignment="Center"></ListBoxItem>
+                </ListBox>
+                <Button Name="buttonHisto" Grid.Row="2" Grid.Column="1" Content="Créer" Click="buttonHisto_Click" Background="White" Margin="3"></Button>
+            </StackPanel>
+
+            <TextBlock Grid.Row="2" Text="Creer figure  : " TextWrapping="WrapWithOverflow" VerticalAlignment="Center"></TextBlock>
+            <StackPanel Grid.Row="2" Grid.Column="1">
+                <ListBox FontSize="10" >
+                    <ListBoxItem Name="Carré" Content="Carré" HorizontalContentAlignment="Center" IsSelected="True"></ListBoxItem>
+                    <ListBoxItem Name="Triangle" Content="Triangle" HorizontalContentAlignment="Center"></ListBoxItem>
+                </ListBox>
+                <Button Name="buttonFigure" Grid.Row="2" Grid.Column="1" Content="Créer" Click="buttonFigure_Click" Background="White" Margin="3" ></Button>
+            </StackPanel>
+
+
+        </Grid>
+
+
+
+        <Grid Grid.Column="1" Grid.Row="0">
+
+        </Grid>
+
+    </Grid>
+</Window>

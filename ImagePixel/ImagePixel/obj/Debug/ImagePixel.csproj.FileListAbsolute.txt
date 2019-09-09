@@ -1,0 +1,6 @@
+c:\users\axel\documents\visual studio 2015\Projects\ImagePixel\ImagePixel\bin\Debug\ImagePixel.exe.config
+c:\users\axel\documents\visual studio 2015\Projects\ImagePixel\ImagePixel\bin\Debug\ImagePixel.exe
+c:\users\axel\documents\visual studio 2015\Projects\ImagePixel\ImagePixel\bin\Debug\ImagePixel.pdb
+c:\users\axel\documents\visual studio 2015\Projects\ImagePixel\ImagePixel\obj\Debug\ImagePixel.csprojResolveAssemblyReference.cache
+c:\users\axel\documents\visual studio 2015\Projects\ImagePixel\ImagePixel\obj\Debug\ImagePixel.exe
+c:\users\axel\documents\visual studio 2015\Projects\ImagePixel\ImagePixel\obj\Debug\ImagePixel.pdb

@@ -1,0 +1,14 @@
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\bin\Debug\ImageWpf.exe.config
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf.csprojResolveAssemblyReference.cache
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\MainWindow.g.cs
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\App.g.cs
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf_MarkupCompile.cache
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf_MarkupCompile.lref
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\bin\Debug\ImageWpf.exe
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\bin\Debug\ImageWpf.pdb
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\MainWindow.baml
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf.g.resources
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf.Properties.Resources.resources
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf.csproj.GenerateResource.Cache
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf.exe
+c:\users\axel\documents\visual studio 2015\Projects\ImageWpf\ImageWpf\obj\Debug\ImageWpf.pdb
